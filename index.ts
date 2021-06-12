@@ -1,22 +1,7 @@
-import {getAll,getById} from "./cosas" 
+import { sumaDosNumeros } from "./otroModulo"
 
-function entradaArgumentos() {
-    const processArgv = Number(process.argv.slice(2).toString());
-    const numero = processArgv;
-    return numero;
-}
-
-function mostrarnumero(){
-    if (entradaArgumentos() >= 0) {
-        console.log(getById(entradaArgumentos()))
-    } else {
-        console.log(getAll())
-    }
-}
-
-
-function main (){
-    mostrarnumero();
+function main(){
+    console.log(sumaDosNumeros(1,2))
 }
 
 main()
