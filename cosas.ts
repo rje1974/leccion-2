@@ -1,5 +1,6 @@
 import { setImmediate } from "timers";
 
+
 export { getAll, getById}
 
 const arrayDeObjetos:object = [
@@ -11,9 +12,11 @@ const arrayDeObjetos:object = [
     {id: 6, nombre: 'adrian', apellido: 'riva'}
 ]
 function getAll(){
-    return arrayDeObjetos
+    return console.log(arrayDeObjetos)
 }
 
-function getById(){
-    return console.log(arrayDeObjetos);
+function getById(entradaArgumentos:number){
+   const encontrada = arrayDeObjetos.find(
+       (element: { id: number; }) => entradaArgumentos == element.id
+   )
 }

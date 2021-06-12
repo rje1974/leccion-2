@@ -8,7 +8,7 @@ function entradaArgumentos() {
 
 function mostrarnumero(){
     if (entradaArgumentos() >= 0) {
-        console.log(getById)
+        console.log(getById(entradaArgumentos()))
     } else {
         console.log(getAll())
     }
