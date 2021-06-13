@@ -7,7 +7,7 @@ function parsearARGV() {
 }
 
 function main(){
-    console.log(getAll(),getById(parsearARGV()));
+    return getAll(),getById(parsearARGV());
 }
 
 main()

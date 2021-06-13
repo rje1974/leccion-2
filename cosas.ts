@@ -15,7 +15,7 @@ function getAll(){
 function getById(parsearARGV){
     const busqueda = arrayDeObjetos.find(function(item){
         if (item.id == parsearARGV) {
-            console.log(item)
+            return console.log(item)
         }
     })
 }
